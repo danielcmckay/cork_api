@@ -16,11 +16,3 @@ export interface IWineRecord extends ICreatedUpdatedInfo {
   updatedAt: Date;
   updatedBy: string;
 }
-
-export interface ICreateWineRecord {
-  name: string;
-  type: string;
-  description?: string;
-  price?: number;
-  rating?: number;
-}
