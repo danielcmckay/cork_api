@@ -31,8 +31,6 @@ export const getWineById = async (req: Request, res: Response) => {
   try {
     const querySnapshot = await getDoc(doc(db, "wines", id));
 
-    console.log(querySnapshot.data());
-    
     res.json(querySnapshot.data());
   } catch (err) {
     res.json(err);

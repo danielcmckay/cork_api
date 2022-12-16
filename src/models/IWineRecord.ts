@@ -17,6 +17,10 @@ export interface IWineRecord extends ICreatedUpdatedInfo {
   updatedBy: string;
 }
 
-export interface IHasId {
-  id: string;
+export interface ICreateWineRecord {
+  name: string;
+  type: string;
+  description?: string;
+  price?: number;
+  rating?: number;
 }
